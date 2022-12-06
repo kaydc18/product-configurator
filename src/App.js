@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './stylesheets/App.css';
 import ProductForm from './components/ProductForm';
 import ProductInfo from './components/ProductInfo';
+import ProductDisplay from './components/ProductDisplay';
 
 function App() {
 
@@ -24,7 +25,10 @@ function App() {
       </header>
       <main className="grid gap-4 grid-cols-2 w-3/4 mx-auto">
         <ProductForm handleProductChange={handleInputChange} />
-        <ProductInfo productInfo={newProductSelection} />
+        <section className="flex flex-col justify-between items-stretch">
+          <ProductDisplay textAttributes={newProductSelection} />
+          <ProductInfo productInfo={newProductSelection} />
+        </section>
       </main>
     </div>
   );

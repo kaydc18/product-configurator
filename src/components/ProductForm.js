@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ColorTypes from './ColorTypes'
 
 const TEXTCOLOR = {"textColor": [ 
@@ -13,7 +13,6 @@ const ProductForm = (props) => {
   }
 
   const handleTextInput = event => {
-    console.log(event)
     if (event.key === "Enter" || event.type === "blur") {
       props.handleProductChange(event)
     }
@@ -34,7 +33,7 @@ const ProductForm = (props) => {
               type="text"
               onKeyDown={handleTextInput}
               onBlur={handleTextInput}
-              placeholder="text"
+              placeholder="Enter your text here"
               className="border-solid border-2 border-gray rounded-lg px-2 ml-2" />
           </label>
         </div>
