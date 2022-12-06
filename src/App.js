@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './stylesheets/App.css';
+import ProductForm from './components/ProductForm';
+import ProductInfo from './components/ProductInfo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="flex justify-center w-full p-3">
+        <h1 className="text-3xl font-bold">Product Configurator</h1>
       </header>
+      <main className="flex justify-center w-3/4 mx-auto">
+        <ProductForm />
+        <ProductInfo />
+      </main>
     </div>
   );
 }
