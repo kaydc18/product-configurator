@@ -22,7 +22,7 @@ const ProductForm = (props) => {
    return <ColorTypes key={textColor.name} name={textColor.name} color={textColor.color} handleInput={handleInput} />
   })
 
-  return(
+  return (
     <aside className="border-solid border-2 border-dark-gray rounded-lg p-5 bg-white">
       <form>
         <div>
@@ -46,7 +46,6 @@ const ProductForm = (props) => {
       </form>
     </aside>
   )
-
 }
 
 export default ProductForm

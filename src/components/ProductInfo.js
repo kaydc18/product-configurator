@@ -15,14 +15,13 @@ const ProductInfo = (props) => {
     showText=`set=setText[${props.productInfo.setText}]`
   }
 
-  return(
+  return (
     <div className="rounded-lg bg-slate-500 text-white font-mono px-5 py-7">
       <p>{holdText}</p>
       <p>{showTextColor}</p>
       <p>{showText}</p>
     </div>
   )
-
 }
 
 export default ProductInfo
